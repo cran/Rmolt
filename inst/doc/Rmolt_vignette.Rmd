@@ -1,0 +1,43 @@
+---
+title: "Introduction to Rmolt"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Rmolt}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Rmolt)
+```
+
+
+Rmolt package is designed to facilitate the representation of the percentage of molted feathers in a bird population.
+
+There are 3 different type of graphics available.
+
+The first one is to have the molting graph for only 10 primaries.
+
+```{r}
+Rmolt(df, "10_0")
+```
+
+The second is for the complete wing and tail for a 10 primaries bird.
+
+```{r}
+Rmolt(fcf, 10)
+
+```
+
+The last one is for the complete wing and tail for a 9 primaries brid.
+
+```{r}
+Rmolt(dcb, 9)
+```
